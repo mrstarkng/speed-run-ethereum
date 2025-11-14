@@ -1,0 +1,19 @@
+{
+  "name": "@challenge-decentralized-stakin/hardhat",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:localhost": "hardhat run deploy/00_deploy_staker.ts --network localhost",
+    "deploy": "hardhat run deploy/00_deploy_staker.ts"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.12",
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "dotenv": "^16.4.5",
+    "hardhat": "^2.19.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
